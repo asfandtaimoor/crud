@@ -1,0 +1,51 @@
+$tableBorder:1px solid rgb(41, 41, 41);
+body {
+    h1 {
+        text-align: center;
+    }
+    .block {
+        display: flex;
+        padding: 20px;
+        #employee-list {
+            margin-left: 30px;
+            text-align: center;
+            border: $tableBorder;
+            thead {
+                border: $tableBorder;
+                tr {
+                    border: $tableBorder;
+                    th {
+                        border: $tableBorder;
+                        font-size: 22px;
+                    }
+                }
+            }
+            tbody {
+                border: $tableBorder;
+                tr {
+                    border: $tableBorder;
+                    td {
+                        border: $tableBorder;
+                        font-size: 20px;
+                    }
+                    a {
+                        font-size: 20px;
+                        cursor: pointer;
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:700px) {
+    body {
+        .block {
+            flex-direction: column;
+            #employee-list {
+                margin: auto;
+            }
+        }
+    }
+}

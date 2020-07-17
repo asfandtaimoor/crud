@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <h1 class="display-4">CRUD</h1>
+
+
+    <div class="block">
+
+        <form class="container mt-4" onsubmit="event.preventDefault(); onFormSubmit()">
+            <div class="row">
+                <label for="Name">Full Name</label>
+                <input id="full-name" type="text" class="form-control" required>
+
+            </div>
+            <div class="row">
+                <label for="EmpCode">Emp Code </label>
+                <input id="emp-code" type="number" class="form-control" required>
+            </div>
+
+            <div class="row">
+                <label for="Salary">Salary</label>
+                <input id="salary" type="number" class="form-control" required>
+            </div>
+
+            <div class="row">
+                <label for="City">City</label>
+                <input id="city" type="text" class="form-control" required>
+            </div>
+
+            <div class="row mt-4">
+
+                <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+            </div>
+        </form>
+
+
+
+
+        <table class="container mt-4" id="employee-list">
+            <thead>
+                <tr>
+                    <th>FullName</th>
+                    <th>Emp Code</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Function</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+            </tbody>
+
+
+        </table>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
